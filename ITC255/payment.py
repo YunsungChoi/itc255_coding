@@ -4,5 +4,5 @@ class Payment():
 
     def __str__(self):
         self.payAmount=round(self.payAmount, 2)
-        response="Your Total will be" + str(self.payAmount)
+        response="Your Total will be " + str(self.payAmount)
         return response

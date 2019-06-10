@@ -20,7 +20,3 @@ class Order():
         payment = Payment(total)
         return payment
 
-    def sendDetails(self):
-        menulist = self.getMenu
-        totalprice = self.calcTotal
-        Receipt(menulist, totalprice)

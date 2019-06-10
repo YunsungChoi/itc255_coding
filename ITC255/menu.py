@@ -2,9 +2,8 @@ class Menu():
     def __init__(self, menuName, menuAvailability, menuPrice, menuNum, menuNote):
         self.menuName=menuName
         self.menuAvailability=menuAvailability
-        self.menuNum=menuNum
         self.menuPrice=menuPrice
-
+        self.menuNum=menuNum
         self.menuNote=menuNote
 
     def getMenu(self):
