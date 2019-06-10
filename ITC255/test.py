@@ -48,3 +48,15 @@ class OrderTest(unittest.TestCase):
    def test_CalculateTotal(self):
         payment=self.order.calcTotal()
         self.assertEqual(str(payment), 'Your Total will be 87.76')
+
+class CartTest(unittest.TestCase): 
+    def setUp(self):
+        self.menu=Menu('pokeS', 'Available', 12.06, 1, 'Contains Raw fishes')
+        self.cart=Cart(self.menu,1)
+
+    def test_Quantity(self):
+        self.assertEqual(self.cart.getQuantity(),1)
+    
+    def test_Menu(self):
+        menu=self.cart.getMenu()
+        self.assertEqual(str(menu), 'pokeS')
